@@ -1,89 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Selector</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">   
 </head>
+
 <body>
     <section class="product-selector">
+    
         <h1>Product Selector</h1>
         <p>Work in progress. Color theory is not my strong suit.</p>
-      
+    
         <div class="slider__dots">
-          <span class="title--num slider__dot"></span>
-          <span class="title--num slider__dot"></span>
-          <span class="title--num slider__dot"></span>
+            <span class="title--num slider__dot"></span>
+            <span class="title--num slider__dot"></span>
+            <span class="title--num slider__dot"></span>
         </div>
-      
-        <section class="category__slide fadeIn">
-          <h2 class="category__title">
-            <span class="title--num">1</span> - Find Your Fit
-          </h2>
-          <div class="fit">
-            <button class="fit__btn" data-value="Super%20Fitted" data-type="fit">
-              Super Fitted
-            </button>
-            <button data-value="Fitted" class="fit__btn" data-type="fit">
-              Fitted
-            </button>
-            <button data-value="Slim%20Fit" class="fit__btn" data-type="fit">
-              Slim Fit
-            </button>
-            <button data-value="Regular%20Fit" class="fit__btn" data-type="fit">
-              Regular Fit
-            </button>
-          </div>
+    
+        <section class="category__slide">
+            <a class="slide--back">&#10094;</a>
+
+            <section class="slide fadeIn">
+                <h2 class="category__title">
+                    <span class="title--num">1</span> - Find Your Fit
+                </h2>
+                <div class="fit">
+                    <button class="fit__btn" data-value="Super%20Fitted" data-type="fit">
+                        Super Fitted
+                    </button>
+                    <button data-value="Fitted" class="fit__btn" data-type="fit">
+                        Fitted
+                    </button>
+                    <button data-value="Slim%20Fit" class="fit__btn" data-type="fit">
+                        Slim Fit
+                    </button>
+                    <button data-value="Regular%20Fit" class="fit__btn" data-type="fit">
+                        Regular Fit
+                    </button>
+                </div>
+            </section>
+    
+            <section class="slide fadeIn">
+                <h2 class="category__title">
+                    <span class="title--num">2</span> - Find Your Fabric
+                </h2>
+                <div class="fabric">
+                    <button class="fabric__btn" data-value="Oxford" data-type="FabType">
+                        Oxford
+                    </button>
+                    <button class="fabric__btn" data-value="Twill" data-type="FabType">
+                        Twill
+                    </button>
+                    <button class="fabric__btn" data-value="Poplin" data-type="FabType">
+                        Poplin
+                    </button>
+                </div>
+            </section>
+    
+            <section class="slide fadeIn">
+                <h2 class="category__title">
+                    <span class="title--num">3</span> - Find Your Cuff
+                </h2>
+                <div class="cuff">
+                    <button class="cuff__btn" data-value="Button%20Cuff" data-type="cuffType">
+                        Button Cuff
+                    </button>
+                    <button class="cuff__btn" data-value="Double%20Cuff" data-type="cuffType">
+                        Double Cuff
+                    </button>
+                </div>
+            </section>
+    
+            <a class="slide--next">&#10095;</a>
+    
         </section>
-      
-        <section class="category__slide fadeIn">
-          <h2 class="category__title">
-            <span class="title--num">2</span> - Find Your Fabric
-          </h2>
-          <div class="fabric">
-            <button class="fabric__btn" data-value="Oxford" data-type="FabType">
-              Oxford
-            </button>
-            <button class="fabric__btn" data-value="Twill" data-type="FabType">
-              Twill
-            </button>
-            <!-- <button class="fabric__btn" data-value='Herringbone' data-type='FabType'>Herringbone -almost no stock</button>  -->
-            <button class="fabric__btn" data-value="Poplin" data-type="FabType">
-              Poplin
-            </button>
-          </div>
-        </section>
-      
-        <section class="category__slide fadeIn">
-          <h2 class="category__title">
-            <span class="title--num">3</span> - Find Your Cuff
-          </h2>
-          <div class="cuff">
-            <button class="cuff__btn" data-value="Button%20Cuff" data-type="cuffType">
-              Button Cuff
-            </button>
-            <button class="cuff__btn" data-value="Double%20Cuff" data-type="cuffType">
-              Double Cuff
-            </button>
-          </div>
-        </section>
-      
-        <!-- <section class="category__slide">
-            <h2 class="category__title">Promotion</h2>
-            <div class="promotion">
-                <button class="promo__btn" data-value='4%20for%20£80' data-type='multibuy__offer'>4 for £80</button>
-                <button class="promo__btn" data-value='4%20for%20£100' data-type='multibuy__offer'>4 for £100</button>
-            </div>
-        </section> -->
-      
-        <a class="slide--back">&#10094;</a>
-        <a class="slide--next">&#10095;</a>
-      
-        <a id="final__btn" href=""
-          ><button onclick="generateURL()">Show Me Shirts!</button></a
-        >
-      </section>
-<script src="main.js"></script>
+    
+        <a id="final__btn" href=""><button onclick="generateURL()">Show Me Shirts!</button></a>
+    
+    </section>
+    <script src="main.js"></script>
 </body>
+
 </html>

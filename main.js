@@ -22,7 +22,7 @@ let userURL = "http://www.tmlewin.co.uk/shirts/?";
   //slides
   function showSlide() {
     let i;
-    let catSlide = document.querySelectorAll(".category__slide");
+    let catSlide = document.querySelectorAll(".slide");
     let sliderDot = document.querySelectorAll(".slider__dot");
     if (slideCount > catSlide.length) {
       slideCount = 1;
